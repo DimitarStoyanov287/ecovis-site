@@ -1,0 +1,37 @@
+---
+const { title = "Ecovis Bulgaria", description = "Ecovis Bulgaria – професионални одиторски, данъчни и счетоводни услуги." } = Astro.props;
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/main.css";
+---
+
+<html lang="bg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis6vCk7U2c+q2z5lU4fJ6hEoZ8sC5+6sW4p4HcGf+N5FdWZ5I6O7C7CEJw8xz+Mw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <script src="/src/scripts/app.js" is:inline></script>
+  <script src="/src/scripts/accordion.js" is:inline></script>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  </body>
+</html>

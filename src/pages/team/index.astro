@@ -1,0 +1,113 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Екип – Ecovis Bulgaria"
+  description="Запознайте се с експертите на Ecovis Bulgaria – одитори, счетоводители и консултанти с международен опит.">
+  
+  <!-- HERO -->
+  <section class="team-hero">
+    <div class="container">
+      <h1 class="team-title">Нашият екип</h1>
+      <p class="team-subtitle">
+        Професионализъм, опит и ангажираност към клиентите – запознайте се с хората зад успеха на Ecovis Bulgaria.
+      </p>
+      
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="team-section container">
+  <div class="team-filter">
+        <button class="filter-btn active" data-target="auditing">Одитори</button>
+        <button class="filter-btn" data-target="accounting">Счетоводители</button>
+  </div>
+  <br>
+
+    <!-- ===== AUDITORS ===== -->
+    <div class="team-group" id="auditing">
+      <!-- Георги Тренчев (самостоятелно) -->
+      <div class="team-row single">
+        <div class="team-photo">
+          <img src="/images/staff/auditing/Georgi_Trenchev.jpg" alt="Георги Тренчев" loading="lazy" />
+        </div>
+        <div class="team-info">
+          <h2>Георги Тренчев</h2>
+          <h4>Одитор, съдружник</h4>
+          <p>
+            Георги Тренчев има дългогодишен опит в одита на финансови отчети, счетоводството и управлението на предприятия.
+            <br><br>Той ръководи одиторския отдел и е преподавател по „Одит“ в УНСС, София.
+          </p>
+        </div>
+      </div>
+
+      <!-- Другите одитори – по двама на ред -->
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="/images/staff/auditing/Desislava_Najdenova.jpg" alt="Десислава Найденова" loading="lazy" />
+          <h3>Десислава Найденова</h3>
+          <h4>Регистриран одитор</h4>
+          <p>Специализира в одиторски ангажименти на международни компании и прилагане на IFRS стандарти.</p>
+        </div>
+
+        <div class="team-card">
+          <img src="/images/staff/auditing/Aneliya_Angelova_Tumbeva.jpg" alt="Анелия Тумбева" loading="lazy" />
+          <h3>Анелия Тумбева</h3>
+          <h4>Регистриран одитор</h4>
+          <p>С фокус върху корпоративно управление, финансови одити и устойчивост на отчетността.</p>
+        </div>
+
+        <div class="team-card">
+          <img src="/images/staff/auditing/Elena_Dzhorova.jpg" alt="Елена Джорова" loading="lazy" />
+          <h3>Елена Джорова</h3>
+          <h4>Регистриран одитор</h4>
+          <p>Участва в ключови одиторски проекти и консултации в областта на финансовите процеси.</p>
+        </div>
+
+        <div class="team-card">
+          <img src="/images/staff/auditing/Mariya_Manolova.jpg" alt="Мария Манолова" loading="lazy" />
+          <h3>Мария Манолова</h3>
+          <h4>Регистриран одитор</h4>
+          <p>Сертифициран експерт по финансов анализ и ESG одит. Работи с клиенти в различни индустрии.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ACCOUNTANTS ===== -->
+    <div class="team-group hidden" id="accounting">
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="/images/staff/accounting/Ivana_Mihneva.jpg" alt="Ивана Михнева" loading="lazy" />
+          <h3>Ивана Михнева</h3>
+          <h4>Счетоводител</h4>
+          <p>Млад и амбициозен специалист в областта на текущото счетоводно обслужване и данъчното планиране.</p>
+        </div>
+
+        <div class="team-card">
+          <img src="/images/staff/accounting/Lozanka_Krsteva.jpg" alt="Лозанка Кръстева" loading="lazy" />
+          <h3>Лозанка Кръстева</h3>
+          <h4>Зам. главен счетоводител</h4>
+          <p>С над 20 години опит, Лозанка ръководи екипа по счетоводство и оптимизира финансовите процеси.</p>
+        </div>
+
+        <div class="team-card">
+          <img src="/images/staff/accounting/Tsvetelina_Guteva.jpg" alt="Цветелина Гутева" loading="lazy" />
+          <h3>Цветелина Гутева</h3>
+          <h4>Счетоводител</h4>
+          <p>Изготвя месечни отчети, справки и декларации. Ключова връзка между клиентите и администрацията.</p>
+        </div>
+
+        <div class="team-card">
+          <img src="/images/staff/accounting/Mariya_Petrova.jpg" alt="Мария Петрова" loading="lazy" />
+          <h3>Мария Петрова</h3>
+          <h4>Счетоводител</h4>
+          <p>Младо и усмихнато попълнение в екипа, изключително мотивирана и отдадена на професията.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/src/scripts/team.js" is:inline></script>
+
+</BaseLayout>

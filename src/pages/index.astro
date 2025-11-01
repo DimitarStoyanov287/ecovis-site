@@ -1,11 +1,253 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Ecovis Bulgaria – Одиторски и счетоводни услуги" description="Ecovis Bulgaria предоставя одиторски, счетоводни и данъчни услуги. Доверен партньор за вашия бизнес.">
+  <main>
+    <!-- HERO (обединена, премиум визия + броячи) -->
+    <section class="hero hero--unified">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <h4 class="eyebrow"># ЗА ВАС И ВАШИЯ БИЗНЕС</h4>
+        <h1 class="hero__title">Ecovis Bulgaria - Експертни счетоводни и одиторски услуги</h1>
+        <p class="hero__text">
+          Лични съвети на местно ниво с общия опит на международна мрежа
+          <br> от професионалисти.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn-primary">Безплатна консултация</a>
+          <a href="/services" class="btn btn-secondary">Разгледайте услугите</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="number" data-target="10">0</span><span class="plus">+</span>
+            <p>Години опит</p>
+          </div>
+          <div class="stat">
+            <span class="number" data-target="570">0</span><span class="plus">+</span>
+            <p>Доволни клиенти</p>
+          </div>
+          <div class="stat">
+            <span class="number" data-target="99">0</span><span class="plus">%</span>
+            <p>Положителни отзиви от клиенти</p>
+          </div>
+          <div class="stat">
+            <span class="number" data-target="25">0</span><span class="plus">+</span>
+            <p>Експерти</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КЛЮЧОВИ УСЛУГИ (компактен премиум grid) -->
+    <section class="section container">
+      <div class="section-header">
+        <h2 class="section-title">Как помагаме</h2>
+        <p class="section-sub">Фокус върху стойност, яснота и съответствие</p>
+      </div>
+
+      <div class="cards-4">
+        <article class="card">
+          <div class="card__icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Счетоводни услуги</h3>
+          <p> Ecovis Bulgaria е консултантска фирма, която осигурява комплексно съдействие и висококачествени услуги в областта на данъчните консултации, счетоводни услуги и изготвяне на отчети по национални и международни стандарти.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Стартиране на бизнес в България</h3>
+          <p>Ние от Ecovis Bulgaria разбираме процеса по стартиране на бизнес в България и предлагаме пълно обслужване и подкрепа на всеки етап от процеса.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon"><i class="fa-solid fa-receipt"></i></div>
+          <h3>Данъчни услуги</h3>
+          <p>Съобразно нашата мисия за предоставяне на най-висококачествени консултации и поддръжка в областта на данъчните въпроси, ние осигуряваме широк спектър от услуги, които покриват всички аспекти на данъчното планиране, оптимизацията и съответствието.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon"><i class="fa-solid fa-file-signature"></i></div>
+          <h3>Одитни услуги</h3>
+          <p>Ecovis Bulgaria предлага широк спектър от одитни услуги, отговарящи на различните нужди на клиентите в съответствие с международните одиторски стандарти.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT ECOVIS BULGARIA PRESENTATION SECTION (оправена версия) -->
+    <section class="section section--about">
+      <div class="container about-wrapper">
+        <!-- Лява колона със снимки -->
+        <div class="about-gallery">
+          <img src="/images/event1.jpg" alt="Ecovis team conference" class="about-photo">
+          <img src="/images/event2.jpg" alt="Ecovis global meeting" class="about-photo">
+          <img src="/images/event3.jpg" alt="Ecovis experts discussion" class="about-photo">
+        </div>
+
+        <!-- Дясна колона с текст -->
+        <div class="about-content">
+          <span class="about-label"><i class="fa-solid fa-hashtag"></i> ECOVIS BULGARIA</span>
+          <h2>Финансова свобода без граници с професионални счетоводни и одиторски услуги</h2>
+          <p>
+            Ecovis Bulgaria е част от световната консултантска фирма Ековис.
+            <strong>Повече от 12 000 човека от над 90 страни работят за Ecovis.</strong>
+            Неговият консултантски фокус и основни компетенции са в областта на
+            <a href="services/tax.html" class="link-red">данъчните услуги</a>,
+            <a href="services/legal-consultations.html" class="link-red">правни консултации</a>,
+            <a href="services/accounting.html" class="link-red">счетоводни услуги</a> и
+            <a href="services/company-changes.html" class="link-red">фирмени промени</a>.
+          </p>
+          <p>
+            Особената сила на Ecovis Bulgaria е комбинацията от лични съвети на местно ниво с общия опит
+            на международна мрежа от професионалисти.
+          </p>
+          <p>
+            Всеки офис на Ecovis Bulgaria може да разчита на квалифицирани специалисти в бек офисите,
+            както и на специфичното индустриално или национално ноу-хау на всички експерти на Ecovis по света.
+          </p>
+          <a href="about.html" class="btn btn-primary">Научи повече</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- УСЛУГИ – линк карти -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Нашите услуги</h2>
+
+        <!-- Swiper container -->
+        <div class="swiper services-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="service-card">
+                <h3>Процесуално представителство</h3>
+                <p>Предоставяне на професионална защита пред съдебни и арбитражни институции със стратегически подход.</p>
+                <a class="service-link" href="/services/litigation">Научи повече</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="service-card">
+                <h3>Регистрация на фирми</h3>
+                <p>Помощ при учредяване на нови компании, включително подготовка на документи и консултации.</p>
+                <a class="service-link" href="/services/registration">Научи повече</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="service-card">
+                <h3>Счетоводни услуги</h3>
+                <p>Комплексни счетоводни решения и изготвяне на отчети съобразно национални и международни стандарти.</p>
+                <a class="service-link" href="/services/accounting">Научи повече</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="service-card">
+                <h3>Правни консултации</h3>
+                <p>Висококачествени правни съвети за бизнеси и физически лица по различни казуси.</p>
+                <a class="service-link" href="/services/legal-consultations">Научи повече</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination and navigation -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY ECOVIS -->
+    <section class="section">
+      <div class="container">
+        <h4 class="eyebrow"># ЗАЩО ECOVIS BULGARIA</h4>
+        <h2 class="section-title">Ние познаваме финансите по-добре</h2>
+        <p class="section-lead">
+          Ние в Ековис България сме вашият доверен партньор за успех, предлагайки най-качествените счетоводни услуги.
+          С експертиза и опит, персонализирани решения и глобално покритие, ние се ангажираме да ви помогнем да процъфтявате
+          в днешния бизнес свят. Доверете се на експертни счетоводни и одиторски услуги.
+        </p>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>Експертиза</h3>
+            <p>Нашият опитен екип е вашият доверен ресурс.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Цялостни решения</h3>
+            <p>Ние покриваме всички ваши бизнес нужди.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-globe-europe"></i></div>
+            <h3>Глобална мрежа от контакти</h3>
+            <p>Достъп до международна експертиза.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Индивидуален подход</h3>
+            <p>Персонализирани решения само за вас.</p>
+          </div>
+        </div>
+
+        <div class="center">
+          <br>
+          <a href="#contact" class="btn btn-primary">Безплатна консултация</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM PREVIEW -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Нашият екип</h2>
+
+        <div class="swiper team-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="team-member">
+                <img src="/images/staff/auditing/Georgi_Trenchev.jpg" alt="Георги Тренчев" />
+                <h4>Георги Тренчев</h4>
+                <span>Одитор, съдружник</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <img src="/images/staff/accounting/Ivana_Mihneva.jpg" alt="Ивана Михнева" />
+                <h4>Ивана Михнева</h4>
+                <span>Счетоводител</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <img src="/images/staff/accounting/Lozanka_Krsteva.jpg" alt="Лозанка Кръстева" />
+                <h4>Лозанка Кръстева</h4>
+                <span>Зам. главен счетоводител</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="center">
+          <br />
+          <a href="/team" class="btn btn-secondary-dark">Вижте целия екип</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <script src="/src/scripts/home-swiper.js" is:inline></script>
+
+</BaseLayout>
